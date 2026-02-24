@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.8.1/math.js" integrity="sha512-AJmFmOXFAAzxbzp498VFGf+/Ke7n/O/Pz7L7R2in/4lEDkqhFvuIemyJo/MzXORunJkrJngeIyaWqLAj2rTY2Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex items-center justify-center min-h-screen p-4 bg-sky-300">
+  <div class="flex flex-col px-4 py-6 bg-white rounded-lg shadow-lg w-96 gap-y-6">
+    <input id="display" type="text" readonly class="px-3 py-2 text-lg focus:outline-none">
+    <div class="grid grid-cols-4 gap-4">
+      <button type="button" id="clear" class="py-2 rounded-full shadow-lg bg-sky-300 hover:shadow-inner">C</button>
+      <button type="button" id="backspace" class="py-2 rounded-full shadow-lg bg-sky-300 hover:shadow-inner"><i class="fa-solid fa-delete-left"></i></button>
+      <button type="button" value="%" class="py-2 rounded-full shadow-lg bg-sky-300 calciBTN hover:shadow-inner">%</button>
+      <button type="button" value="/" class="py-2 rounded-full shadow-lg bg-sky-300 calciBTN hover:shadow-inner">/</button>
+      <button type="button" value="7" class="py-2 bg-white rounded-full shadow-lg calciBTN hover:shadow-inner">7</button>
+      <button type="button" value="8" class="py-2 bg-white rounded-full shadow-lg calciBTN hover:shadow-inner">8</button>
+      <button type="button" value="9" class="py-2 bg-white rounded-full shadow-lg calciBTN hover:shadow-inner">9</button>
+      <button type="button" value="*" class="py-2 rounded-full shadow-lg bg-sky-300 calciBTN hover:shadow-inner">*</button>
+      <button type="button" value="4" class="py-2 bg-white rounded-full shadow-lg calciBTN hover:shadow-inner">4</button>
+      <button type="button" value="5" class="py-2 bg-white rounded-full shadow-lg calciBTN hover:shadow-inner">5</button>
+      <button type="button" value="6" class="py-2 bg-white rounded-full shadow-lg calciBTN hover:shadow-inner">6</button>
+      <button type="button" value="-" class="py-2 rounded-full shadow-lg bg-sky-300 calciBTN hover:shadow-inner">-</button>
+      <button type="button" value="1" class="py-2 bg-white rounded-full shadow-lg calciBTN hover:shadow-inner">1</button>
+      <button type="button" value="2" class="py-2 bg-white rounded-full shadow-lg calciBTN hover:shadow-inner">2</button>
+      <button type="button" value="3" class="py-2 bg-white rounded-full shadow-lg calciBTN hover:shadow-inner">3</button>
+      <button type="button" value="+" class="py-2 rounded-full shadow-lg bg-sky-300 calciBTN hover:shadow-inner">+</button>
+      <button type="button" value="0" class="py-2 bg-white rounded-full shadow-lg calciBTN hover:shadow-inner">0</button>
+      <button type="button" value="." class="py-2 bg-white rounded-full shadow-lg calciBTN hover:shadow-inner">.</button>
+      <button type="button" id="equalTo" class="col-span-2 py-2 rounded-full shadow-lg bg-sky-300 hover:shadow-inner">=</button>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
